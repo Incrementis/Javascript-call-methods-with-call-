@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>Call</title>
+		<meta charset = "UTF-8">
+	
+	</head>
+	
+	<!--
+		NOTE: 
+		Because of the shortness of the html code
+		and demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling. 
+		
+		TIP:
+		To see the inputs which can be clicked in the picture, just change to 
+		"opacity:1" in the style attribute.
+	-->
+	
+	<body>
+	
+		<h2>Put Items into your Cart</h2>
+	
+	
+		<section style="position:relative;height:420px">
+	
+			<h3>Shelf</h3>
+
+			<img src="Shelf.jpg" alt="ERROR: No image found!">
+			
+			
+			<!--SHELF TOP-->
+			
+			<input type="checkbox" id="pencil" name="shelf"
+			style="position:absolute; left:60px; top:120px;
+			width:30px; height:70px; opacity:0" onclick="Take()">
+
+			
+			<br>
+			<input type="checkbox" id="card" name="shelf"
+			style="position:absolute; left:130px; top:120px;
+			border:solid; width:40px; height:70px; opacity:0" onclick="Take()">
+			
+			<br>
+			<input type="checkbox" id="box" name="shelf"
+			style="position:absolute; left:195px; top:150px;
+			border:solid; width:70px; height:40px; opacity:0" onclick="Take()">
+			
+			<br>
+			<input type="checkbox" id="usa" name="shelf"
+			style="position:absolute; left:290px; top:75px;
+			border:solid; width:150px; height:110px; opacity:0" onclick="Take()">
+			
+			
+			<!--SHELF BOTTOM-->
+			
+			<input type="checkbox" id="book" name="shelf"
+			style="position:absolute; left:35px; top:245px;
+			border:solid; width:100px; height:110px; opacity:0" onclick="Take()">
+			
+			
+			<br>
+			<input type="checkbox" id="belt" name="shelf"
+			style="position:absolute; left:150px; top:330px;
+			border:solid; width:70px; height:30px; opacity:0" onclick="Take()">
+			
+			<br>
+			<input type="checkbox" id="gbr" name="shelf"
+			style="position:absolute; left:290px; top:260px;
+			border:solid; width:150px; height:110px; opacity:0" onclick="Take()">
+			
+			
+		</section>
+		
+		
+		<!--It seems, position should be relative or else the buttons will not work-->
+		<section style="width:500px; position:relative">
+	
+	
+			<button type="button" onclick="Reset()" style="float:right;">RESET</button>
+			
+			<button type="button" onclick="takeAll()" style="float:right;">TAKE ALL</button>
+			
+			
+		</section>
+		
+		
+		<section>	
+		
+			<h3>Cart</h3>
+			
+			
+			<img src="Cart.jpg" alt="ERROR: No image found!">
+			
+
+			<ul id="selected" style="display:inline-block"></ul>
+
+			
+		</section>
+		
+		<br>
+		<br>
+		-----------------------------------------------
+		-----------------------------------------------
+
+	
+		<br>
+		<br>
+		<a href="https://github.com/Incrementis/Javascript-call-methods-with-call-/wiki"> 
+		Call methods with call Wiki</a>
+		
+	
+	</body>
+
+	
+	<script language = "javascript" type = "text/javascript" src = "call.js"></script> 
+
+</html>
